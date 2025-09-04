@@ -1,8 +1,19 @@
-void mani () {
+void main() {
   for (int i = 1; i <= 5; i++) {
     print("Outer Loop: $i");
-    for (int j = 1; j <= 3; j++) {
-      print("  Inner Loop: $j");
-    }
   }
+
+// do while loop
+  // int no = 100; 
+  // do {
+  //   print("Do While Loop: $no");
+  // } while (no < 50);
+
+// while loop
+  int num = 1;
+  while (num <= 5) {
+    print("While Loop: $num");
+    num++;
+  }
+
 }
