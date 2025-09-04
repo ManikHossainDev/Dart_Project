@@ -39,6 +39,10 @@ void main() {
   print("Updated Boolean: $d");
 
 
+  // big integer 
+  BigInt bigIntValue = BigInt.parse('123456789012345678901234567890');
+  print("BigInt Value: $bigIntValue");
+
 
 }
 
