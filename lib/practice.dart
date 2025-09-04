@@ -15,14 +15,15 @@ void main() {
 
 
 // declaration of variable
-
   int a = 10;
   double b = 20.5;
+  BigInt bigIntValue = BigInt.parse('123456789012345678901234567890');
   String c = "Manik Hossain";
   bool d = true;
 
   print("Integer: $a");
   print("Double: $b");
+  print("BigInt: $bigIntValue");
   print("String: $c");
   print("Boolean: $d");
 
@@ -39,9 +40,6 @@ void main() {
   print("Updated Boolean: $d");
 
 
-  // big integer 
-  BigInt bigIntValue = BigInt.parse('123456789012345678901234567890');
-  print("BigInt Value: $bigIntValue");
 
 
 }
