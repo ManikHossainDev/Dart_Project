@@ -1,4 +1,10 @@
+import 'dart:io';
 
-void main () {
-  print("welcome Md Manik Hossain");
+void main() {
+  print("Welcome Md Manik Hossain");
+
+  stdout.write("Enter your name: ");
+  String? name = stdin.readLineSync(); 
+
+  print("Hello $name");
 }
