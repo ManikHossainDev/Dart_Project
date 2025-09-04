@@ -26,6 +26,17 @@ void main() {
   print("String: $c");
   print("Boolean: $d");
 
+// Assign new value
+
+  a = 15;
+  b = 25.5;
+  c = "Hossain Manik";
+  d = false;
+
+  print("Updated Integer: $a");
+  print("Updated Double: $b");
+  print("Updated String: $c");
+  print("Updated Boolean: $d");
 
 
 
