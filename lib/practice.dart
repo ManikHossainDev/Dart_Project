@@ -4,7 +4,37 @@ void main() {
   print("Welcome Md Manik Hossain");
 
   stdout.write("Enter your name: ");
-  String? name = stdin.readLineSync(); 
+  var name = stdin.readLineSync();
 
   print("Hello $name");
+
+
+// class object creation
+
+ manik();
+
+
+// declaration of variable
+
+  int a = 10;
+  double b = 20.5;
+  String c = "Manik Hossain";
+  bool d = true;
+
+  print("Integer: $a");
+  print("Double: $b");
+  print("String: $c");
+  print("Boolean: $d");
+
+
+
+
 }
+
+class manik {
+
+  manik();
+
+}
+
+
