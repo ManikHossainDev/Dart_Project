@@ -34,12 +34,12 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 200,
-          height: 200,
+          width: 500,
+          height: 500,
           // color: Colors.white,
           child: Center(
 
-              // text
+              //  // text
               // child: Text(
               //   "how are you",
               //   style: TextStyle(
@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
               //   ),
               // )
 
-              //button text
+            //  //button text
             // child: Center(
             //   child: TextButton(
             //     child: Text("Click here"),
@@ -63,7 +63,7 @@ class MyHomePage extends StatelessWidget {
             //   ),
             // ),
 
-            // //  ElevateButton
+            //  //  ElevateButton
             // child: Center(
             //   child: ElevatedButton(
             //     child: Text("Click here"),
@@ -78,24 +78,34 @@ class MyHomePage extends StatelessWidget {
 
 
 
-            // OutLinedButton
-            child: Center(
-              child: OutlinedButton(
-                child: Text('OutLinedButton'),
-                onPressed: () {
-                  print('outlinedbutton short');
-                },
-                onLongPress: () {
-                  print("out lined button, long");
-                },
-              ),
-            ),
+            // // OutLinedButton
+            // child: Center(
+            //   child: OutlinedButton(
+            //     child: Text('OutLinedButton'),
+            //     onPressed: () {
+            //       print('outlinedbutton short');
+            //     },
+            //     onLongPress: () {
+            //       print("out lined button, long");
+            //     },
+            //   ),
+            // ),
+
+            
+            // image show flutter
+            child: Container(
+              width: 500,
+              height: 500,
+              child: Image.asset('assets/images/phons.jpg'),
+            )
+            
+
 
 
           ),
         ),
       ),
     );
-  }
+  }   
 }
 
