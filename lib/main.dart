@@ -110,6 +110,17 @@ class MyHomePage extends StatelessWidget {
             //   ],
             // ),
 
+            // //Row
+            // child: Row (
+            //   children: [
+            //     Text("A", style: TextStyle(fontSize: 55),),
+            //     Text("B", style: TextStyle(fontSize: 55),),
+            //     Text("C", style: TextStyle(fontSize: 55),),
+            //     Text("D", style: TextStyle(fontSize: 55),),
+            //     Text("E", style: TextStyle(fontSize: 55),),
+            //   ],
+            // ),
+
 
           ),
         ),
