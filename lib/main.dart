@@ -10,95 +10,53 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Header & Footer Demo',
+      debugShowCheckedModeBanner: false, 
+      title: 'Flutter Demo',
+      // debugShowCheckedModeBanner:false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.cyan,
       ),
-      home: const MyHomePage(title: 'Manik Hossain'),
+      home: const MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
-
-  // List of random image URLs
-  final List<String> _images = [
-    'https://picsum.photos/400/200?random=1',
-    'https://picsum.photos/400/200?random=2',
-    'https://picsum.photos/400/200?random=3',
-    'https://picsum.photos/400/200?random=4',
-    'https://picsum.photos/400/200?random=1',
-    'https://picsum.photos/400/200?random=2',
-    'https://picsum.photos/400/200?random=3',
-    'https://picsum.photos/400/200?random=4',
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // HEADER
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: Text(widget.title),
-        actions: [
-          IconButton(icon: const Icon(Icons.notifications), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.search), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.person), onPressed: () {}),
-        ],
+        title: const Text("Md Manik Hossain"),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        centerTitle: true,
       ),
-
-      // HOME BODY WITH RANDOM IMAGES
-      body: ListView.builder(
-        padding: const EdgeInsets.all(16),
-        itemCount: _images.length,
-        itemBuilder: (context, index) {
-          return Card(
-            margin: const EdgeInsets.symmetric(vertical: 10),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          color: Colors.green,
+          child: Center(
+            child: Container(
+              width: 100,
+              height: 100,
+              color: Colors.amberAccent,
+              child: Center(
+                child: Text(
+                  "how are you",
+                  style: TextStyle(
+                    color: Colors.lightBlue,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ),
-            elevation: 4,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(16),
-              child: Image.network(_images[index], fit: BoxFit.cover),
-            ),
-          );
-        },
-      ),
-
-      // FOOTER (BOTTOM NAVIGATION)
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorite',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.deepPurple,
-        onTap: _onItemTapped,
+        ),
       ),
     );
   }
 }
+
