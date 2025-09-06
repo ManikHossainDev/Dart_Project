@@ -36,7 +36,7 @@ class MyHomePage extends StatelessWidget {
         child: Container(
           width: 500,
           height: 500,
-          // color: Colors.white,
+          color: Colors.blueGrey,
           child: Center(
 
               //  // text
@@ -91,21 +91,30 @@ class MyHomePage extends StatelessWidget {
             //   ),
             // ),
 
-            
-            // image show flutter
-            child: Container(
-              width: 500,
-              height: 500,
-              child: Image.asset('assets/images/phons.jpg'),
-            )
-            
 
+            // // image show flutter
+            // child: Container(
+            //   width: 500,
+            //   height: 500,
+            //   child: Image.asset('assets/images/phons.jpg'),
+            // )
+
+            // // Column
+            // child: Column(
+            //   children: [
+            //     Text("A", style: TextStyle(fontSize: 55),),
+            //     Text("B", style: TextStyle(fontSize: 55),),
+            //     Text("C", style: TextStyle(fontSize: 55),),
+            //     Text("D", style: TextStyle(fontSize: 55),),
+            //     Text("E", style: TextStyle(fontSize: 55),),
+            //   ],
+            // ),
 
 
           ),
         ),
       ),
     );
-  }   
+  }
 }
 
