@@ -63,20 +63,33 @@ class MyHomePage extends StatelessWidget {
             //   ),
             // ),
 
-            //  ElevateButton
+            // //  ElevateButton
+            // child: Center(
+            //   child: ElevatedButton(
+            //     child: Text("Click here"),
+            //     onPressed: () {
+            //       print("text button ElevateButton");
+            //     },
+            //     onLongPress: () {
+            //       print("this button long ElevateButton");
+            //     },
+            //   ),
+            // ),
+
+
+
+            // OutLinedButton
             child: Center(
-              child: ElevatedButton(
-                child: Text("Click here"),
+              child: OutlinedButton(
+                child: Text('OutLinedButton'),
                 onPressed: () {
-                  print("text button ElevateButton");
+                  print('outlinedbutton short');
                 },
                 onLongPress: () {
-                  print("this button long ElevateButton");
+                  print("out lined button, long");
                 },
               ),
             ),
-
-
 
 
           ),
