@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       // debugShowCheckedModeBanner:false,
       theme: ThemeData(
@@ -36,23 +36,49 @@ class MyHomePage extends StatelessWidget {
         child: Container(
           width: 200,
           height: 200,
-          color: Colors.green,
+          // color: Colors.white,
           child: Center(
-            child: Container(
-              width: 100,
-              height: 100,
-              color: Colors.amberAccent,
-              child: Center(
-                child: Text(
-                  "how are you",
-                  style: TextStyle(
-                    color: Colors.lightBlue,
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+
+              // text
+              // child: Text(
+              //   "how are you",
+              //   style: TextStyle(
+              //     color: Colors.white,
+              //     fontSize: 10,
+              //     fontWeight: FontWeight.bold,
+              //     backgroundColor:Colors.amberAccent
+              //   ),
+              // )
+
+              //button text
+            // child: Center(
+            //   child: TextButton(
+            //     child: Text("Click here"),
+            //     onPressed: () {
+            //       print("text button tapped");
+            //     },
+            //     onLongPress: () {
+            //       print("this button long");
+            //     },
+            //   ),
+            // ),
+
+            //  ElevateButton
+            child: Center(
+              child: ElevatedButton(
+                child: Text("Click here"),
+                onPressed: () {
+                  print("text button ElevateButton");
+                },
+                onLongPress: () {
+                  print("this button long ElevateButton");
+                },
               ),
             ),
+
+
+
+
           ),
         ),
       ),
