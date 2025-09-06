@@ -122,6 +122,38 @@ class MyHomePage extends StatelessWidget {
             // ),
 
 
+            // //Text type
+            // child: Column(
+            //   children: <Text>[
+            //     Text("A", style: TextStyle(fontSize: 55),),
+            //     Text("B", style: TextStyle(fontSize: 55),),
+            //     Text("C", style: TextStyle(fontSize: 55),),
+            //     Text("D", style: TextStyle(fontSize: 55),),
+            //     Text("E", style: TextStyle(fontSize: 55),),
+            //   ],
+            // ),
+
+
+            //Button type
+            child: Column(
+              children: <Widget>[
+                Text("A", style: TextStyle(fontSize: 55),),
+                Text("B", style: TextStyle(fontSize: 55),),
+                Text("C", style: TextStyle(fontSize: 55),),
+                Text("D", style: TextStyle(fontSize: 55),),
+                Text("E", style: TextStyle(fontSize: 55),),
+                ElevatedButton(
+                      child: Text("Click here"),
+                      onPressed: () {
+                        print("text button ElevateButton");
+                      },
+                      onLongPress: () {
+                        print("this button long ElevateButton");
+                      },
+                    ),
+                  ],
+                ),
+
           ),
         ),
       ),
