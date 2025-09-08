@@ -35,7 +35,7 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: Container(
           width: 300,
-          height: 300,
+          height: 400,
           color: Colors.blueGrey,
           child: Container(
 
@@ -250,6 +250,97 @@ class MyHomePage extends StatelessWidget {
             //         ),
             //       ),
             //     ))
+
+            // ScrollView vertical
+            child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding:  const EdgeInsets.only(bottom: 11),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal ,
+                    child: Row (
+                  children: [
+                  Container(
+                  margin: EdgeInsets.only(right : 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.amber,
+
+                ),
+                Container(
+                  margin: EdgeInsets.only(right : 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.blue,
+
+                ),
+                Container(
+                  margin: EdgeInsets.only(right : 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.green,
+
+                ),
+
+                Container(
+                  margin: EdgeInsets.only(right : 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.lightGreenAccent,
+
+                )
+              ],
+            ),
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.amber,
+
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.blue,
+
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.green,
+
+                ),
+
+                Container(
+                  margin: EdgeInsets.only(bottom: 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.lightGreenAccent,
+
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.deepOrangeAccent,
+
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 11),
+                  width: 200,
+                  height:100,
+                  color: Colors.teal,
+
+                )
+              ],
+            ),
+            )
+
 
 
 
