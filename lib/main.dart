@@ -189,47 +189,49 @@ class MyHomePage extends StatelessWidget {
 
 
 
-            // mainAxisAlignment, and crossAxisAlignment,
-            child: Row (
 
-               // mainaxisAlignment
-               // mainAxisAlignment: MainAxisAlignment.start,
-               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-               // mainAxisAlignment: MainAxisAlignment.center,
-               // mainAxisAlignment: MainAxisAlignment.end,
+            // // mainAxisAlignment, and crossAxisAlignment,
+            // child: Column (
+            //
+            //   // mainaxisAlignment
+            //   // mainAxisAlignment: MainAxisAlignment.start,
+            //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   // mainAxisAlignment: MainAxisAlignment.center,
+            //   // mainAxisAlignment: MainAxisAlignment.end,
+            //
+            //   // crossAxisAlignment,
+            //   // crossAxisAlignment: CrossAxisAlignment.center,
+            //   //  crossAxisAlignment: CrossAxisAlignment.end,
+            //   // crossAxisAlignment: CrossAxisAlignment.start,
+            //   crossAxisAlignment: CrossAxisAlignment.stretch,
+            //
+            //   children: [
+            //     ElevatedButton(
+            //       child: Text("Click"),
+            //       onPressed: () {
+            //         print("text button OutlinedButton");
+            //       },
+            //
+            //     ),
+            //
+            //
+            //     // Text("A", style: TextStyle(fontSize: 20),),
+            //     ElevatedButton(
+            //       child: Text("Click"),
+            //       onPressed: () {
+            //         print("text button ElevateButton");
+            //       },
+            //       onLongPress: () {
+            //         print("text button OnLongPress");
+            //       }
+            //       ,)
+            //   ],
+            // ),
 
-               // crossAxisAlignment,
-               // crossAxisAlignment: CrossAxisAlignment.center,
-               //  crossAxisAlignment: CrossAxisAlignment.end,
-               // crossAxisAlignment: CrossAxisAlignment.start,
-               crossAxisAlignment: CrossAxisAlignment.stretch,
 
 
-
-              children: [
-                ElevatedButton(
-                     child: Text("Click"),
-                     onPressed: () {
-                       print("text button OutlinedButton");
-                     },
-
-                 ),
-
-
-                 // Text("A", style: TextStyle(fontSize: 20),),
-                 ElevatedButton(
-                     child: Text("Click"),
-                     onPressed: () {
-                       print("text button ElevateButton");
-                     },
-                     onLongPress: () {
-                       print("text button OnLongPress");
-                     }
-                   ,)
-              ],
-            ),
 
 
 
