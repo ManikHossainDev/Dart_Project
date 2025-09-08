@@ -34,8 +34,8 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 500,
-          height: 500,
+          width: 300,
+          height: 300,
           color: Colors.blueGrey,
           child: Container(
 
@@ -232,7 +232,24 @@ class MyHomePage extends StatelessWidget {
 
 
 
-
+            // // InkWell
+            // child: Center(
+            //     child: InkWell(
+            //       onTap: () {
+            //         print("Component click bolble");
+            //       },
+            //       onLongPress: () {
+            //         print("longClick button");
+            //       },
+            //       child: Container(
+            //         width: 100,
+            //         height: 100,
+            //         color: Colors.amberAccent,
+            //         child: Center(
+            //           child:   Text("Manik Hossain")
+            //         ),
+            //       ),
+            //     ))
 
 
 
