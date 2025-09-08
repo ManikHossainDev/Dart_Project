@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
           width: 500,
           height: 500,
           color: Colors.blueGrey,
-          child: Center(
+          child: Container(
 
               //  // text
               // child: Text(
@@ -49,6 +49,9 @@ class MyHomePage extends StatelessWidget {
               //     backgroundColor:Colors.amberAccent
               //   ),
               // )
+
+
+
 
             //  //button text
             // child: Center(
@@ -63,6 +66,9 @@ class MyHomePage extends StatelessWidget {
             //   ),
             // ),
 
+
+
+
             //  //  ElevateButton
             // child: Center(
             //   child: ElevatedButton(
@@ -75,6 +81,8 @@ class MyHomePage extends StatelessWidget {
             //     },
             //   ),
             // ),
+
+
 
 
 
@@ -92,12 +100,19 @@ class MyHomePage extends StatelessWidget {
             // ),
 
 
+
+
+
             // // image show flutter
             // child: Container(
             //   width: 500,
             //   height: 500,
             //   child: Image.asset('assets/images/phons.jpg'),
             // )
+
+
+
+
 
             // // Column
             // child: Column(
@@ -109,6 +124,10 @@ class MyHomePage extends StatelessWidget {
             //     Text("E", style: TextStyle(fontSize: 55),),
             //   ],
             // ),
+
+
+
+
 
             // //Row
             // child: Row (
@@ -122,6 +141,9 @@ class MyHomePage extends StatelessWidget {
             // ),
 
 
+
+
+
             // //Text type
             // child: Column(
             //   children: <Text>[
@@ -132,6 +154,10 @@ class MyHomePage extends StatelessWidget {
             //     Text("E", style: TextStyle(fontSize: 55),),
             //   ],
             // ),
+
+
+
+
 
 
             // //Button type
@@ -158,11 +184,41 @@ class MyHomePage extends StatelessWidget {
             //     ],
             //   )
 
+
+
+
+
+
             // mainAxisAlignment, and crossAxisAlignment,
             child: Row (
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+               // mainaxisAlignment
+               // mainAxisAlignment: MainAxisAlignment.start,
+               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               // mainAxisAlignment: MainAxisAlignment.center,
+               // mainAxisAlignment: MainAxisAlignment.end,
+
+               // crossAxisAlignment,
+               // crossAxisAlignment: CrossAxisAlignment.center,
+               //  crossAxisAlignment: CrossAxisAlignment.end,
+               // crossAxisAlignment: CrossAxisAlignment.start,
+               crossAxisAlignment: CrossAxisAlignment.stretch,
+
+
+
               children: [
-                 Text("A", style: TextStyle(fontSize: 20),),
+                ElevatedButton(
+                     child: Text("Click"),
+                     onPressed: () {
+                       print("text button OutlinedButton");
+                     },
+
+                 ),
+
+
+                 // Text("A", style: TextStyle(fontSize: 20),),
                  ElevatedButton(
                      child: Text("Click"),
                      onPressed: () {
@@ -174,6 +230,10 @@ class MyHomePage extends StatelessWidget {
                    ,)
               ],
             ),
+
+
+
+
 
           ),
         ),
