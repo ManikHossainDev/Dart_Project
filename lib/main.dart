@@ -134,31 +134,46 @@ class MyHomePage extends StatelessWidget {
             // ),
 
 
-            //Button type
-              child: Row(
-                children: <Widget>[
-                  Column(
-                    children: [
-                      Text("A", style: TextStyle(fontSize: 55)),
-                      Text("B", style: TextStyle(fontSize: 55)),
-                      Text("C", style: TextStyle(fontSize: 55)),
-                      Text("D", style: TextStyle(fontSize: 55)),
-                      Text("E", style: TextStyle(fontSize: 55)),
-                    ],
-                  ),
-                  ElevatedButton(
-                    child: Text("Click here"),
-                    onPressed: () {
-                      print("text button ElevateButton");
-                    },
-                    onLongPress: () {
-                      print("this button long ElevateButton");
-                    },
-                  ),
-                ],
-              )
+            // //Button type
+            //   child: Row(
+            //     children: <Widget>[
+            //       Column(
+            //         children: [
+            //           Text("A", style: TextStyle(fontSize: 55)),
+            //           Text("B", style: TextStyle(fontSize: 55)),
+            //           Text("C", style: TextStyle(fontSize: 55)),
+            //           Text("D", style: TextStyle(fontSize: 55)),
+            //           Text("E", style: TextStyle(fontSize: 55)),
+            //         ],
+            //       ),
+            //       ElevatedButton(
+            //         child: Text("Click here"),
+            //         onPressed: () {
+            //           print("text button ElevateButton");
+            //         },
+            //         onLongPress: () {
+            //           print("this button long ElevateButton");
+            //         },
+            //       ),
+            //     ],
+            //   )
 
-
+            // mainAxisAlignment, and crossAxisAlignment,
+            child: Row (
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                 Text("A", style: TextStyle(fontSize: 20),),
+                 ElevatedButton(
+                     child: Text("Click"),
+                     onPressed: () {
+                       print("text button ElevateButton");
+                     },
+                     onLongPress: () {
+                       print("text button OnLongPress");
+                     }
+                   ,)
+              ],
+            ),
 
           ),
         ),
