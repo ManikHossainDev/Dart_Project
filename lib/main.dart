@@ -26,6 +26,10 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
+    var arrName = ['manik', 'rakib', 'abu', 'sakib', 'rabi', 'rana', 'how', 'kmn', 'roy', 'islam' ] ;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Md Manik Hossain"),
@@ -251,97 +255,97 @@ class MyHomePage extends StatelessWidget {
             //       ),
             //     ))
 
-            // ScrollView vertical
-            child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding:  const EdgeInsets.only(bottom: 11),
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal ,
-                    child: Row (
-                  children: [
-                  Container(
-                  margin: EdgeInsets.only(right : 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.amber,
 
-                ),
-                Container(
-                  margin: EdgeInsets.only(right : 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.blue,
+            // // List view
+            //  child: ListView(
+            //   scrollDirection: Axis.horizontal,
+            //   reverse: true,
+            //   padding: const EdgeInsets.only(left: 20),
+            //   children: [
+            //     Padding(
+            //       padding: const EdgeInsets.all(8.0),
+            //       child: Text(
+            //         "A",
+            //         style: TextStyle(fontSize: 55, fontWeight: FontWeight.w500),
+            //       ),
+            //     ),
+            //     Padding(
+            //       padding: const EdgeInsets.all(8.0),
+            //       child: Text(
+            //         "B",
+            //         style: TextStyle(fontSize: 55, fontWeight: FontWeight.w500),
+            //       ),
+            //     ),
+            //     Padding(
+            //       padding: const EdgeInsets.all(8.0),
+            //       child: Text(
+            //         "C",
+            //         style: TextStyle(fontSize: 55, fontWeight: FontWeight.w500),
+            //       ),
+            //     ),
+            //     Padding(
+            //       padding: const EdgeInsets.all(8.0),
+            //       child: Text(
+            //         "D",
+            //         style: TextStyle(fontSize: 55, fontWeight: FontWeight.w500),
+            //       ),
+            //     ),
+            //   ],
+            // ),
 
-                ),
-                Container(
-                  margin: EdgeInsets.only(right : 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.green,
 
-                ),
 
-                Container(
-                  margin: EdgeInsets.only(right : 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.lightGreenAccent,
+            // //  list  view builder
+            // child: ListView.builder(
+            //   itemCount: arrName.length,
+            //   itemExtent: 100,
+            //   // reverse: true,
+            //   scrollDirection: Axis.horizontal,
+            //   itemBuilder: (context, index) {
+            //     return Padding(
+            //       padding: const EdgeInsets.all(8.0), // spacing around each item
+            //       child: Text(
+            //         arrName[index],
+            //         style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+            //       ),
+            //     );
+            //   },
+            // ),
 
-                )
-              ],
+
+            // list view separated
+            child: ListView.separated(
+              itemCount: arrName.length,
+              separatorBuilder: (context, index) => Divider(height: 4, thickness: 2),
+              itemBuilder: (context, index) {
+                return  Row(
+                    mainAxisAlignment: MainAxisAlignment.start, // or spaceBetween
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16.0), // left & right padding
+                        child: Text(
+                          arrName[index],
+                          style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                        child: Text(
+                          arrName[index],
+                          style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
+                );
+              },
             ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.amber,
-
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.blue,
-
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.green,
-
-                ),
-
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.lightGreenAccent,
-
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.deepOrangeAccent,
-
-                ),
-                Container(
-                  margin: EdgeInsets.only(bottom: 11),
-                  width: 200,
-                  height:100,
-                  color: Colors.teal,
-
-                )
-              ],
-            ),
-            )
 
 
+
+
+
+
+            
 
 
 
